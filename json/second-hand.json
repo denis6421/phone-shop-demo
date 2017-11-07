@@ -1,0 +1,18 @@
+[
+  {
+    "url":"image/slider/iphone6.png",
+    "name":"Iphone 6 ",
+    "price": "1,200 ₪",
+      "hidden":"מכשיר הדגל של חברת אפל לשנת 2015"
+    },{
+      "url":"image/slider/galaxy6.png",
+      "name":"Samasung galaxy s6 ",
+      "price": "1,150 ₪",
+        "hidden":"סלולרי מחברת סמסונג, במצב מצויין"
+      },{
+        "url":"image/slider/huawei9.png",
+        "name":"Huawei P9 ",
+        "price": "9,00 ₪",
+          "hidden":"מכשיר הדגל של חברת וואוי של שנה שעברה"
+        }
+]
