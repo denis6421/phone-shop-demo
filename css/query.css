@@ -1,286 +1,60 @@
-@media screen and (max-width: 1200px) {
-  .header_wrapper {
-    width:100%;
-    }
-.logo{
-padding-left: 40px;
+@media screen and (max-width:1200px){.header_wrapper{width:100%;}
+.logo{padding-left:40px;}
+header .tabs_nav{padding-right:20px;}
 }
-header .tabs_nav {
-padding-right: 20px;
+@media screen and (min-width:1000px){header .tabs_nav{display:block!important;width:100%;}
+nav ul li:first-child{display:block!important;}
 }
+@media screen and (max-width:1000px){header{height:140px;}
+main{top:110px;}
+header .tabs_nav{display:none;position:fixed;top:140px;width:100%;}
+header .tabs_nav div{justify-content:space-around;width:100%;}
+header .tabs_nav div button:first-child{display:none;}
+header .upper_nav{height:40px;direction:rtl;width:50%;padding-right:15px;position:absolute;top:83px;right:370px;font-size:15px;}
+.mobile_nav{display:block;}
+.logo{font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;text-align:center;position:fixed;top:30px;}
+header nav ul{width:700px;}
+header nav ul li:first-child{position:fixed;left:0px;top:140px;display:flex;align-items:flex-start;width:100%;display:none;border:none;border-top:1px solid grey;z-index:30;}
+header nav ul li:first-child input{width:100%;height:100%;border:none;outline:none;padding-right:50px;font-size:20px;}
+.hidden_tab_container{width:100%;left:0%;top:175px;}
+.ajax_tabs_wrapper ul li{font-size:16px;width:85%;}
+.ajax_tabs_wrapper .ajax_nav_text p{font-size:15px;line-height:140%;}
 }
-@media screen and (min-width: 1000px){
-  header .tabs_nav {
-  display: block!important;
-  width: 100%;
-  }
-  nav ul li:first-child{
-    display: block!important;
-  }
+@media screen and (max-width:900px){main{height:auto;}
+.big_main_container{flex-wrap:wrap;height:50%;width:100%;}
+.big_main_container_big_img{width:100%;height:50%;order:1;overflow:hidden;margin-bottom:5px;}
+.big_main_container_big_img img{height:auto;width:78%;transform:scale(1.6);padding-top:12%;}
+.big_main_container_small_img{order:2;width:100%;}
+.big_main_container_small_img div:nth-child(2){height:auto;}
+.smaller_main_container_small div{width:49.5%;height:100%;}
+.smaller_main_container{display:flex;justify-content:space-between;height:35%;margin-top:5px;flex-wrap:wrap;}
+.smaller_main_container_small{width:100%;display:flex;justify-content:space-between;order:0;}
+.smaller_main_container_big{width:100%;height:50vw;overflow:hidden;order:1;margin-top:8px;}
+.images_label_btn{width:auto;font-size:3vw;padding-right:10px;}
+.big_image_label_btn{bottom:20px;right:30%;height:40%;}
+.big_image_label_btn p{font-size:5vw;}
+.big_image_label_btn button{font-size:2.6vw;width:100%;height:32%;margin-top:10px;}
+.why_us_container{justify-content:space-around;}
+.why_us_container div{width:45%;height:150px;}
+.why_us_container div div p{width:90%;font-size:12px;}
+.why_us_container div img{width:50px;}
+.why_us_container div p{font-size:12px;}
 }
-@media screen and (max-width: 1000px){
-  header {
-      height:140px;
-      }
-main{
-  top:110px;
+@media screen and (max-width:800px){header{height:115px;}
+header nav ul li{display:none;}
+header .upper_nav{display:none;}
+.logo{font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;text-align:center;position:static;margin:auto;margin-top:10px;}
+header .tabs_nav{display:none;position:fixed;top:95px;width:100%;height:auto;background:white;padding-right:0px;margin-top:20px;}
+header .tabs_nav div button{border:none;color:black;width:100%;padding-right:30px;padding-bottom:10px;padding-top:10px;display:flex;justify-content:space-between;border-bottom:1px solid lightgray;}
+header .tabs_nav div button::after{content:"❯";padding-left:30px;}
+header .tabs_nav div button:hover{background:white;border:none;color:black;}
+header .tabs_nav div{flex-direction:column;background:#EBEBEB;}
+header nav ul li:first-child{top:115px;height:60px;}
+.mobile_nav{background:#333333;color:white;}
+.mobile_menu_button span{background:white;}
+.glass_img{color:white;}
 }
-    header .tabs_nav {
-    display: none;
-    position: fixed;
-    top:140px;
-    width: 100%;
-    }
-    header .tabs_nav div{
-      justify-content: space-around;
-      width: 100%;
-    }
-      header .tabs_nav div button:first-child{
-        display: none;
-      }
-header .upper_nav {
-  height: 40px;
-  direction: rtl;
-  width: 50%;
-  padding-right: 15px;
-  position: absolute;
-  top:83px;
-  right: 370px;
-font-size: 15px;
-
-}
-.mobile_nav{
-  display: block;
-
-}
-.logo {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  text-align: center;
-  position: fixed;
-  top:30px;
-
-}
-header nav ul{
-  width: 700px;
-}
-header nav ul li:first-child{
-  position: fixed;
-  left: 0px;
-  top:140px;
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  display: none;
-  border: none;
-  border-top: 1px solid grey;
-  z-index: 30;
-}
-header nav ul li:first-child input{
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  padding-right: 50px;
-  font-size: 20px;
-}
-.hidden_tab_container {
-  width: 100%;
-  left: 0%;
-  top: 175px;
-
-}
-.ajax_tabs_wrapper ul li{
-  font-size: 16px;
-  width: 85%;
-}
-.ajax_tabs_wrapper .ajax_nav_text p{
-  font-size: 15px;
-  line-height: 140%;
-}
-
-}
-@media screen and (max-width: 900px){
-  main{
-    height: auto;
-  }
-  .big_main_container {
-
-    flex-wrap: wrap;
-    height:50%;
-    width: 100%;
-  }
-  .big_main_container_big_img {
-    width: 100%;
-    height: 50%;
-    order: 1;
-    overflow: hidden;
-    margin-bottom: 5px;
-
-
-  }
-  .big_main_container_big_img img{
-    height: auto;
-    width: 78%;
-    transform: scale(1.6);
-    padding-top: 12%;
-
-
-  }
-  .big_main_container_small_img{
-    order: 2;
-    width: 100%;
-
-
-  }
-  .big_main_container_small_img div:nth-child(2){
-  height: auto;
-  }
-
-  .smaller_main_container_small div {
-    width: 49.5%;
-    height: 100%;
-
-  }
-  .smaller_main_container {
-    display: flex;
-    justify-content: space-between;
-    height: 35%;
-    margin-top: 5px;
-    flex-wrap: wrap;
-  }
-  .smaller_main_container_small {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    order: 0;
-  }
-  .smaller_main_container_big {
-    width: 100%;
-    height: 50vw;
-    overflow: hidden;
-    order: 1;
-    margin-top: 8px;
-  }
-  .images_label_btn{
-    width: auto;
-    font-size: 3vw;
-    padding-right: 10px;
-  }
-  .big_image_label_btn {
-    bottom: 20px;
-    right: 30%;
-    height: 40%;
-
-    }
-    .big_image_label_btn p{
-      font-size: 5vw;
-    }
-    .big_image_label_btn button{
-      font-size: 2.3vw;
-      width: 100%;
-      height: 32%;
-      margin-top: 10px;
-
-    }
-    .why_us_container{
-      justify-content: space-around;
-    }
-    .why_us_container div{
-      width: 45%;
-      height: 150px;
-    }
-.why_us_container div div p{
-  width: 90%;
-  font-size: 12px;
-}
-.why_us_container div img {
-  width: 50px;
-
-}
-.why_us_container div p{
-  font-size: 12px;
-}
-  }
-@media screen and (max-width: 800px){
-  header{
-    height: 115px;
-  }
-    header nav ul li{
-      display: none;
-    }
-header .upper_nav{
-  display: none;
-}
-.logo {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  text-align: center;
-  position: static;
-  margin: auto;
-  margin-top: 10px;
-
-}
-header .tabs_nav {
-display: none;
-position: fixed;
-top:95px;
-width: 100%;
-height: auto;
-background: white;
-padding-right: 0px;
-margin-top: 20px;
-}
-header .tabs_nav div button{
-  border: none;
-  color: black;
-  width: 100%;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid lightgray;
-}
-header .tabs_nav div button::after{
-  content: "❯";
-  padding-left: 30px;
-
-}
-header .tabs_nav div button:hover{
-  background: white;
-  border: none;
-  color: black;
-}
-header .tabs_nav div{
-  flex-direction: column;
-  background: #EBEBEB;
-}
-header nav ul li:first-child{
-  top:115px;
-  height:60px;
-}
-.mobile_nav{
-  background:#333333;
-  color: white;
-}
-
-.mobile_menu_button span{
-  background: white;
-}
-.glass_img{
-  color: white;
-}
-}
-@media screen and (max-width: 550px){
-    .mobile_menu{
-    right: 120px;
-    width: 150px;
-
-    }
-  .mobile_menu h3{
-    font-size: 15px;
-  }
-  .glass_img{
-    right: 80px;
-  }
+@media screen and (max-width:550px){.mobile_menu{right:120px;width:150px;}
+.mobile_menu h3{font-size:15px;}
+.glass_img{right:80px;}
 }
