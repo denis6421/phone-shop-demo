@@ -56,5 +56,5 @@ header nav ul li:first-child{top:115px;height:60px;}
 }
 @media screen and (max-width:550px){.mobile_menu{right:120px;width:150px;}
 .mobile_menu h3{font-size:15px;}
-.glass_img{right:80px;}
+.glass_img{right:80px;width:30px;}
 }
